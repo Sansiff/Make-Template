@@ -1,0 +1,1933 @@
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.5.17)  17 MAY 2022 23:55
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count163
+\c@section=\count164
+\c@subsection=\count165
+\c@subsubsection=\count166
+\c@paragraph=\count167
+\c@subparagraph=\count168
+\c@figure=\count169
+\c@table=\count170
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) (./format.tex
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks15
+\thm@bodyfont=\toks16
+\thm@headfont=\toks17
+\thm@notefont=\toks18
+\thm@headpunct=\toks19
+\thm@preskip=\skip49
+\thm@postskip=\skip50
+\thm@headsep=\skip51
+\dth@everypar=\toks20
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2020-02-14 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xdvipdfmx.def
+File: l3backend-xdvipdfmx.def 2020-02-03 L3 backend support: xdvipdfmx
+\g__graphics_track_int=\count171
+\l__pdf_internal_box=\box45
+\g__pdf_backend_object_int=\count172
+\g__pdf_backend_annotation_int=\count173
+))
+Package: xparse 2020-02-14 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count174
+\g__xparse_grabber_int=\count175
+\l__xparse_m_args_int=\count176
+\l__xparse_v_nesting_int=\count177
+)
+Package: fontspec 2020/02/03 v2.7h Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2020/02/03 v2.7h Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count178
+\l__fontspec_language_int=\count179
+\l__fontspec_strnum_int=\count180
+\l__fontspec_tmp_int=\count181
+\l__fontspec_tmpa_int=\count182
+\l__fontspec_tmpb_int=\count183
+\l__fontspec_tmpc_int=\count184
+\l__fontspec_em_int=\count185
+\l__fontspec_emdef_int=\count186
+\l__fontspec_strong_int=\count187
+\l__fontspec_strongdef_int=\count188
+\l__fontspec_tmpa_dim=\dimen135
+\l__fontspec_tmpb_dim=\dimen136
+\l__fontspec_tmpc_dim=\dimen137
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+
+(/usr/share/texmf/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+)
+\tipaTiiicode=\count189
+\tipasavetokens=\toks21
+\tipachecktokens=\toks22
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 105.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen138
+\Gin@req@width=\dimen139
+))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xltxtra/xltxtra.sty
+Package: xltxtra 2018/12/31 v0.7 Improvements for the "XeLaTeX" format
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/realscripts/realscripts.sty
+Package: realscripts 2016/02/13 v0.3d Access OpenType subscripts and superscrip
+ts
+\subsupersep=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/metalogo/metalogo.sty
+Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+\xl@everylogo=\toks24
+\xl@@everylogo=\toks25
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+\l__xetex_show_hyphens_wrapping_box=\box46
+\l__xetex_show_hyphens_temp_box=\box47
+\l__xetex_show_hyphens_final_box=\box48
+\g__xetex_show_hyphens_word_box=\box49
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box50
+\beforetitleunit=\skip52
+\aftertitleunit=\skip53
+\ttl@plus=\dimen141
+\ttl@minus=\dimen142
+\ttl@toksa=\toks26
+\titlewidth=\dimen143
+\titlewidthlast=\dimen144
+\titlewidthfirst=\dimen145
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+Package: xeCJK 2020/02/14 v3.8.1 Typesetting CJK scripts with XeLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2020-02-14 LaTeX2e option processing using LaTeX3 keys
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2020-02-14 L3 Experimental prototype document functions
+\l__xtemplate_tmp_dim=\dimen146
+\l__xtemplate_tmp_int=\count190
+\l__xtemplate_tmp_muskip=\muskip16
+\l__xtemplate_tmp_skip=\skip54
+)
+\l__xeCJK_tmp_int=\count191
+\l__xeCJK_tmp_box=\box51
+\l__xeCJK_tmp_dim=\dimen147
+\l__xeCJK_tmp_skip=\skip55
+\g__xeCJK_space_factor_int=\count192
+\l__xeCJK_begin_int=\count193
+\l__xeCJK_end_int=\count194
+\c__xeCJK_CJK_class_int=\XeTeXcharclass1
+\c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
+\c__xeCJK_FullRight_class_int=\XeTeXcharclass3
+\c__xeCJK_HalfLeft_class_int=\XeTeXcharclass4
+\c__xeCJK_HalfRight_class_int=\XeTeXcharclass5
+\c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
+\c__xeCJK_CM_class_int=\XeTeXcharclass7
+\c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
+\l__xeCJK_last_skip=\skip56
+\g__xeCJK_node_int=\count195
+\c__xeCJK_CJK_node_dim=\dimen148
+\c__xeCJK_CJK-space_node_dim=\dimen149
+\c__xeCJK_default_node_dim=\dimen150
+\c__xeCJK_default-space_node_dim=\dimen151
+\c__xeCJK_CJK-widow_node_dim=\dimen152
+\c__xeCJK_normalspace_node_dim=\dimen153
+\l__xeCJK_ccglue_skip=\skip57
+\l__xeCJK_ecglue_skip=\skip58
+\l__xeCJK_punct_kern_skip=\skip59
+\l__xeCJK_last_penalty_int=\count196
+\l__xeCJK_last_bound_dim=\dimen154
+\l__xeCJK_last_kern_dim=\dimen155
+\l__xeCJK_widow_penalty_int=\count197
+
+Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
+(xtemplate)             argument(s) on line 2302.
+
+\l__xeCJK_fixed_punct_width_dim=\dimen156
+\l__xeCJK_mixed_punct_width_dim=\dimen157
+\l__xeCJK_middle_punct_width_dim=\dimen158
+\l__xeCJK_fixed_margin_width_dim=\dimen159
+\l__xeCJK_mixed_margin_width_dim=\dimen160
+\l__xeCJK_middle_margin_width_dim=\dimen161
+\l__xeCJK_bound_punct_width_dim=\dimen162
+\l__xeCJK_bound_margin_width_dim=\dimen163
+\l__xeCJK_margin_minimum_dim=\dimen164
+\l__xeCJK_kerning_total_width_dim=\dimen165
+\l__xeCJK_same_align_margin_dim=\dimen166
+\l__xeCJK_different_align_margin_dim=\dimen167
+\l__xeCJK_kerning_margin_width_dim=\dimen168
+\l__xeCJK_kerning_margin_minimum_dim=\dimen169
+\l__xeCJK_bound_dim=\dimen170
+\l__xeCJK_reverse_bound_dim=\dimen171
+\l__xeCJK_margin_dim=\dimen172
+\l__xeCJK_minimum_bound_dim=\dimen173
+\l__xeCJK_kerning_margin_dim=\dimen174
+\g__xeCJK_family_int=\count198
+\l__xeCJK_fam_int=\count199
+\g__xeCJK_fam_allocation_int=\count266
+\l__xeCJK_verb_case_int=\count267
+\l__xeCJK_verb_exspace_skip=\skip60
+
+(/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+File: xeCJK.cfg 2020/02/14 v3.8.1 Configuration file for xeCJK package
+))
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip61
+\f@nch@O@elh=\skip62
+\f@nch@O@erh=\skip63
+\f@nch@O@olh=\skip64
+\f@nch@O@orh=\skip65
+\f@nch@O@elf=\skip66
+\f@nch@O@erf=\skip67
+\f@nch@O@olf=\skip68
+\f@nch@O@orf=\skip69
+) (./listings.sty
+\lst@mode=\count268
+\lst@gtempboxa=\box52
+\lst@token=\toks27
+\lst@length=\count269
+\lst@currlwidth=\dimen175
+\lst@column=\count270
+\lst@pos=\count271
+\lst@lostspace=\dimen176
+\lst@width=\dimen177
+\lst@newlines=\count272
+\lst@lineno=\count273
+\lst@maxwidth=\dimen178
+(./lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count274
+\c@lineno=\count275
+\lst@skipnumbers=\count276
+\lst@framebox=\box53
+) (./listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/printlen/printlen.sty
+Package: printlen 2009/09/03 v1.1a print lengths with units
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/zref/zref.sty
+Package: zref 2019/11/29 v2.28 A new reference scheme for LaTeX (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/zref/zref-base.sty
+Package: zref-base 2019/11/29 v2.28 Module base for zref (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 763.
+Package zref Info: New property: default on input line 764.
+Package zref Info: New property: page on input line 765.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/zref/zref-savepos.sty
+Package: zref-savepos 2019/11/29 v2.28 Module savepos for zref (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+Package zref Info: New property list: savepos on input line 84.
+Package zref Info: New property: posx on input line 85.
+Package zref Info: New property: posy on input line 86.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count277
+\mult@box=\box54
+\multicol@leftmargin=\dimen179
+\c@unbalance=\count278
+\c@collectmore=\count279
+\doublecol@number=\count280
+\multicoltolerance=\count281
+\multicolpretolerance=\count282
+\full@width=\dimen180
+\page@free=\dimen181
+\premulticols=\dimen182
+\postmulticols=\dimen183
+\multicolsep=\skip70
+\multicolbaselineskip=\skip71
+\partial@page=\box55
+\last@line=\box56
+\maxbalancingoverflow=\dimen184
+\mult@rightbox=\box57
+\mult@grightbox=\box58
+\mult@gfirstbox=\box59
+\mult@firstbox=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\c@minrows=\count283
+\c@columnbadness=\count284
+\c@finalcolumnbadness=\count285
+\last@try=\dimen185
+\multicolovershoot=\dimen186
+\multicolundershoot=\dimen187
+\mult@nat@firstbox=\box98
+\colbreak@box=\box99
+\mc@col@check@num=\count286
+)
+(/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+
+
+LaTeX Warning: Command \underbar  has changed.
+               Check if current package is valid.
+
+
+LaTeX Warning: Command \underline  has changed.
+               Check if current package is valid.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/mdframed/mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count287
+)
+(/usr/share/texlive/texmf-dist/tex/latex/zref/zref-abspage.sty
+Package: zref-abspage 2019/11/29 v2.28 Module abspage for zref (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
+)
+\c@abspage=\count288
+Package zref Info: New property: abspage on input line 66.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip72
+\c@mdf@globalstyle@cnt=\count289
+\mdf@skipabove@length=\skip73
+\mdf@skipbelow@length=\skip74
+\mdf@leftmargin@length=\skip75
+\mdf@rightmargin@length=\skip76
+\mdf@innerleftmargin@length=\skip77
+\mdf@innerrightmargin@length=\skip78
+\mdf@innertopmargin@length=\skip79
+\mdf@innerbottommargin@length=\skip80
+\mdf@splittopskip@length=\skip81
+\mdf@splitbottomskip@length=\skip82
+\mdf@outermargin@length=\skip83
+\mdf@innermargin@length=\skip84
+\mdf@linewidth@length=\skip85
+\mdf@innerlinewidth@length=\skip86
+\mdf@middlelinewidth@length=\skip87
+\mdf@outerlinewidth@length=\skip88
+\mdf@roundcorner@length=\skip89
+\mdf@footenotedistance@length=\skip90
+\mdf@userdefinedwidth@length=\skip91
+\mdf@needspace@length=\skip92
+\mdf@frametitleaboveskip@length=\skip93
+\mdf@frametitlebelowskip@length=\skip94
+\mdf@frametitlerulewidth@length=\skip95
+\mdf@frametitleleftmargin@length=\skip96
+\mdf@frametitlerightmargin@length=\skip97
+\mdf@shadowsize@length=\skip98
+\mdf@extratopheight@length=\skip99
+\mdf@subtitleabovelinewidth@length=\skip100
+\mdf@subtitlebelowlinewidth@length=\skip101
+\mdf@subtitleaboveskip@length=\skip102
+\mdf@subtitlebelowskip@length=\skip103
+\mdf@subtitleinneraboveskip@length=\skip104
+\mdf@subtitleinnerbelowskip@length=\skip105
+\mdf@subsubtitleabovelinewidth@length=\skip106
+\mdf@subsubtitlebelowlinewidth@length=\skip107
+\mdf@subsubtitleaboveskip@length=\skip108
+\mdf@subsubtitlebelowskip@length=\skip109
+\mdf@subsubtitleinneraboveskip@length=\skip110
+\mdf@subsubtitleinnerbelowskip@length=\skip111
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks28
+\pgfutil@tempdima=\dimen188
+\pgfutil@tempdimb=\dimen189
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box100
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks31
+))
+\pgf@x=\dimen190
+\pgf@y=\dimen191
+\pgf@xa=\dimen192
+\pgf@ya=\dimen193
+\pgf@xb=\dimen194
+\pgf@yb=\dimen195
+\pgf@xc=\dimen196
+\pgf@yc=\dimen197
+\pgf@xd=\dimen198
+\pgf@yd=\dimen199
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count290
+\c@pgf@countb=\count291
+\c@pgf@countc=\count292
+\c@pgf@countd=\count293
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
+\pgf@sys@id@count=\count294
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+)
+\pgfsys@objnum=\count295
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count296
+\pgfsyssoftpath@bigbuffer@items=\count297
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen256
+\pgfmath@count=\count298
+\pgfmath@box=\box101
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count299
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen257
+\pgf@picmaxx=\dimen258
+\pgf@picminy=\dimen259
+\pgf@picmaxy=\dimen260
+\pgf@pathminx=\dimen261
+\pgf@pathmaxx=\dimen262
+\pgf@pathminy=\dimen263
+\pgf@pathmaxy=\dimen264
+\pgf@xx=\dimen265
+\pgf@xy=\dimen266
+\pgf@yx=\dimen267
+\pgf@yy=\dimen268
+\pgf@zx=\dimen269
+\pgf@zy=\dimen270
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen271
+\pgf@path@lasty=\dimen272
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen273
+\pgf@shorten@start@additional=\dimen274
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box102
+\pgf@hbox=\box103
+\pgf@layerbox@main=\box104
+\pgf@picture@serial@count=\count300
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen275
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen276
+\pgf@pt@y=\dimen277
+\pgf@pt@temp=\dimen278
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen279
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen280
+\pgf@sys@shading@range@num=\count301
+\pgf@shadingcount=\count302
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box105
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box106
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen281
+\pgf@nodesepend=\dimen282
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen283
+\pgffor@skip=\dimen284
+\pgffor@stack=\toks38
+\pgffor@toks=\toks39
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
+.code.tex
+File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@plot@mark@count=\count303
+\pgfplotmarksize=\dimen285
+)
+\tikz@lastx=\dimen286
+\tikz@lasty=\dimen287
+\tikz@lastxsaved=\dimen288
+\tikz@lastysaved=\dimen289
+\tikz@lastmovetox=\dimen290
+\tikz@lastmovetoy=\dimen291
+\tikzleveldistance=\dimen292
+\tikzsiblingdistance=\dimen293
+\tikz@figbox=\box107
+\tikz@figbox@bg=\box108
+\tikz@tempbox=\box109
+\tikz@tempbox@bg=\box110
+\tikztreelevel=\count304
+\tikznumberofchildren=\count305
+\tikznumberofcurrentchild=\count306
+\tikz@fig@count=\count307
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfmatrixcurrentrow=\count308
+\pgfmatrixcurrentcolumn=\count309
+\pgf@matrix@numberofcolumns=\count310
+)
+\tikz@expandcount=\count311
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-1.mdf
+File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
+)
+\mdf@frametitlebox=\box111
+\mdf@footnotebox=\box112
+\mdf@splitbox@one=\box113
+\mdf@splitbox@two=\box114
+\mdf@splitbox@save=\box115
+\mdfsplitboxwidth=\skip112
+\mdfsplitboxtotalwidth=\skip113
+\mdfsplitboxheight=\skip114
+\mdfsplitboxdepth=\skip115
+\mdfsplitboxtotalheight=\skip116
+\mdfframetitleboxwidth=\skip117
+\mdfframetitleboxtotalwidth=\skip118
+\mdfframetitleboxheight=\skip119
+\mdfframetitleboxdepth=\skip120
+\mdfframetitleboxtotalheight=\skip121
+\mdffootnoteboxwidth=\skip122
+\mdffootnoteboxtotalwidth=\skip123
+\mdffootnoteboxheight=\skip124
+\mdffootnoteboxdepth=\skip125
+\mdffootnoteboxtotalheight=\skip126
+\mdftotallinewidth=\skip127
+\mdfboundingboxwidth=\skip128
+\mdfboundingboxtotalwidth=\skip129
+\mdfboundingboxheight=\skip130
+\mdfboundingboxdepth=\skip131
+\mdfboundingboxtotalheight=\skip132
+\mdf@freevspace@length=\skip133
+\mdf@horizontalwidthofbox@length=\skip134
+\mdf@verticalmarginwhole@length=\skip135
+\mdf@horizontalspaceofbox=\skip136
+\mdfsubtitleheight=\skip137
+\mdfsubsubtitleheight=\skip138
+\c@mdfcountframes=\count312
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count313
+\c@mdf@env@i=\count314
+\c@mdf@env@ii=\count315
+\c@mdf@zref@counter=\count316
+Package zref Info: New property: mdf@pagevalue on input line 895.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+\@linkdim=\dimen294
+\Hy@linkcounter=\count317
+\Hy@pagecounter=\count318
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count319
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count320
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen295
+
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count321
+\Field@Width=\dimen296
+\Fld@charsize=\dimen297
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
+\Hy@abspage=\count322
+\c@Item=\count323
+\c@Hfootnote=\count324
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2020/01/14 v7.00d Hyperref driver for XeTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2020/01/14 v7.00d Hyperref: PDF Unicode definition (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box116
+\c@Hy@AnnotLevel=\count325
+\HyField@AnnotCount=\count326
+\Fld@listcount=\count327
+\c@bookmark@seq@number=\count328
+
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip139
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count329
+\Gm@cntv=\count330
+\c@Gm@tempcnt=\count331
+\Gm@bindingoffset=\dimen298
+\Gm@wd@mp=\dimen299
+\Gm@odd@mp=\dimen300
+\Gm@even@mp=\dimen301
+\Gm@layoutwidth=\dimen302
+\Gm@layoutheight=\dimen303
+\Gm@layouthoffset=\dimen304
+\Gm@layoutvoffset=\dimen305
+\Gm@dimlist=\toks40
+)
+
+Package fontspec Info: Could not resolve font "SimHei/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "SimSun/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "SimSun/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Font family 'SimSun(0)' created for font 'SimSun' with
+(fontspec)             options [Script={CJK},BoldFont={SimHei}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"SimSun/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"SimHei/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'CourierNew(0)' created for font 'Courier
+(fontspec)             New' with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Courier
+(fontspec)             New/OT:script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Courier
+(fontspec)             New/B/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Courier
+(fontspec)             New/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Courier
+(fontspec)             New/BI/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+ (./lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(./lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+) (./lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xunicode-addon.sty
+Package: xunicode-addon 2020/02/14 v3.8.1 addon file for xunicode
+\l__xunadd_tmp_coffin=\box117
+\l__xunadd_circle_coffin=\box118
+\l_xunadd_slot_int=\count332
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+
+*** Reloading Xunicode for encoding 'TU' ***
+) (/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xunicode-extra.def
+File: xunicode-extra.def 2020/02/14 v3.8.1 extra definition for xunicode
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
+Package: xeCJK-listings 2020/02/14 v3.8.1 xeCJK patch file for listings
+\l__xeCJK_listings_max_char_int=\count333
+\l__xeCJK_listings_flag_int=\count334
+)
+
+LaTeX Warning: Unused global option(s):
+    [9pt].
+
+No file main.aux.
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
+.
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 5.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 5.
+
+
+(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+
+Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 5.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 5.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 5.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 5.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 5.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 5.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 5.
+LaTeX Font Info:    Redeclaring math accent \check on input line 5.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 5.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 5.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 5.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 5.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 5.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 5.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 5.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 5.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 5.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 5.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 5.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 5.
+\c@lstlisting=\count335
+\AtBeginShipoutBox=\box119
+
+ABD: EveryShipout initializing macros
+Package hyperref Info: Link coloring OFF on input line 5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count336
+)
+LaTeX Info: Redefining \ref on input line 5.
+LaTeX Info: Redefining \pageref on input line 5.
+LaTeX Info: Redefining \nameref on input line 5.
+\@outlinefile=\write4
+\openout4 = `main.out'.
+
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: landscape 
+* h-part:(L,W,R)=(56.9055pt, 731.23584pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 483.69687pt, 56.9055pt)
+* \paperwidth=845.04684pt
+* \paperheight=597.50787pt
+* \textwidth=731.23584pt
+* \textheight=483.69687pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-97.87762pt
+* \headheight=73.97733pt
+* \headsep=8.53581pt
+* \topskip=10.0pt
+* \footskip=36.98857pt
+* \marginparwidth=144.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+File: 1.jpg Graphic file (type bmp)
+<1.jpg>
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-ascii-print.def
+File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
+
+)
+[1
+
+]
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+
+
+Package xeCJK Warning: Unknown CJK family `\CJKsfdefault' is being ignored.
+(xeCJK)                
+(xeCJK)                Try to use `\setCJKsansfont[...]{...}' to define it.
+
+[2
+
+] (./code.tex
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 302f\else 
+                                                  \@arabic \c@lstnumber \oth...
+l.48 #
+      include<bits/stdc++.h>
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.48 #
+      include<bits/stdc++.h>
+? 
+
+Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
+(xeCJK)                
+(xeCJK)                Try to use `\setCJKmonofont[...]{...}' to define it.
+
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 421c\else 
+                                                  \ifnum 1=\value {lstnumber...
+l.49 using 
+           namespace std;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.49 using 
+           namespace std;
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.49 using 
+           namespace std;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 571f\else 
+                                                  \ifnum 2=\value {lstnumber...
+l.50 const 
+           int MAX = 2e5+10000;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.50 const 
+           int MAX = 2e5+10000;
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.50 const 
+           int MAX = 2e5+10000;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 99d0\else 
+                                                  \ifnum 3=\value {lstnumber...
+l.51 char 
+          s[MAX];
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.51 char 
+          s[MAX];
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.51 char 
+          s[MAX];
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 81d4\else 
+                                                  \ifnum 4=\value {lstnumber...
+l.52 struct 
+            Manacher{
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.52 struct 
+            Manacher{
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.52 struct 
+            Manacher{
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 9ccd\else 
+                                                  \ifnum 5=\value {lstnumber...
+l.53     int 
+             lc[MAX];
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.53     int 
+             lc[MAX];
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.53     int 
+             lc[MAX];
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 04f3\else 
+                                                  \ifnum 6=\value {lstnumber...
+l.54     char 
+              ch[MAX];
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.54     char 
+              ch[MAX];
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.54     char 
+              ch[MAX];
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt d7af\else 
+                                                  \ifnum 7=\value {lstnumber...
+l.55     int 
+             N;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.55     int 
+             N;
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.55     int 
+             N;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 053c\else 
+                                                  \ifnum 8=\value {lstnumber...
+l.56     Manacher(
+                  char *s){init(s);manacher();}
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.56     Manacher(
+                  char *s){init(s);manacher();}
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 44ca\else 
+                                                  \ifnum 9=\value {lstnumber...
+l.57     /*
+            s 1 bas */
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.57     /*
+            s 1 bas */
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt e798\else 
+                                                  \ifnum 10=\value {lstnumbe...
+l.58     void 
+              init(char *s){
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.58     void 
+              init(char *s){
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.58     void 
+              init(char *s){
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 0de8\else 
+                                                  \ifnum 11=\value {lstnumbe...
+l.59         int 
+                 n = strlen(s+1);
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.59         int 
+                 n = strlen(s+1);
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.59         int 
+                 n = strlen(s+1);
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt ad19\else 
+                                                  \ifnum 12=\value {lstnumbe...
+l.60         ch[
+                n*2 +1] = '#';
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.60         ch[
+                n*2 +1] = '#';
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt ce0d\else 
+                                                  \ifnum 13=\value {lstnumbe...
+l.61         ch[
+                0] = '@';
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.61         ch[
+                0] = '@';
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 46cd\else 
+                                                  \ifnum 14=\value {lstnumbe...
+l.62         ch[
+                n*2 +2] = '\0';
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.62         ch[
+                n*2 +2] = '\0';
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 0c3f\else 
+                                                  \ifnum 15=\value {lstnumbe...
+l.63         for 
+                 (int i=n;i>=1;i--){
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.63         for 
+                 (int i=n;i>=1;i--){
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.63         for 
+                 (int i=n;i>=1;i--){
+? 
+LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 6beb\else 
+                                                  \ifnum 16=\value {lstnumbe...
+l.64             ch[
+                    i*2] = s[i];ch[i*2 -1] = '#';
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.64             ch[
+                    i*2] = s[i];ch[i*2 -1] = '#';
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 95cf\else 
+                                                  \ifnum 17=\value {lstnumbe...
+l.65         }
+              
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.65         }
+              
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 5991\else 
+                                                  \ifnum 18=\value {lstnumbe...
+l.66         N 
+               = 2* n +1;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.66         N 
+               = 2* n +1;
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.66         N 
+               = 2* n +1;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 95cf\else 
+                                                  \ifnum 19=\value {lstnumbe...
+l.67     }
+          
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.67     }
+          
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 6c5f\else 
+                                                  \ifnum 20=\value {lstnumbe...
+l.68     void 
+              manacher(){
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.68     void 
+              manacher(){
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.68     void 
+              manacher(){
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt a461\else 
+                                                  \ifnum 21=\value {lstnumbe...
+l.69         lc[
+                1]=1;  int k=1;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.69         lc[
+                1]=1;  int k=1;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 256b\else 
+                                                  \ifnum 22=\value {lstnumbe...
+l.70         for 
+                 (int i=2;i<=N;i++){
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.70         for 
+                 (int i=2;i<=N;i++){
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.70         for 
+                 (int i=2;i<=N;i++){
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 7957\else 
+                                                  \ifnum 23=\value {lstnumbe...
+l.71             int 
+                     p = k+lc[k]-1;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.71             int 
+                     p = k+lc[k]-1;
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.71             int 
+                     p = k+lc[k]-1;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 5e04\else 
+                                                  \ifnum 24=\value {lstnumbe...
+l.72             if 
+                    (i<=p){
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.72             if 
+                    (i<=p){
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.72             if 
+                    (i<=p){
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 24a1\else 
+                                                  \ifnum 25=\value {lstnumbe...
+l.73                 lc[
+                        i]=min(lc[2*k-i],p-i+1);
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.73                 lc[
+                        i]=min(lc[2*k-i],p-i+1);
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 87d6\else 
+                                                  \ifnum 26=\value {lstnumbe...
+l.74             }e
+                   lse{  lc[i]=1;  }
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.74             }e
+                   lse{  lc[i]=1;  }
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt aa80\else 
+                                                  \ifnum 27=\value {lstnumbe...
+l.75             while 
+                       (ch[i+lc[i]]==ch[i-lc[i]])lc[i]++;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.75             while 
+                       (ch[i+lc[i]]==ch[i-lc[i]])lc[i]++;
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.75             while 
+                       (ch[i+lc[i]]==ch[i-lc[i]])lc[i]++;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 2b9a\else 
+                                                  \ifnum 28=\value {lstnumbe...
+l.76             if 
+                    (i+lc[i]>k+lc[k])k=i;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.76             if 
+                    (i+lc[i]>k+lc[k])k=i;
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.76             if 
+                    (i+lc[i]>k+lc[k])k=i;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 95cf\else 
+                                                  \ifnum 29=\value {lstnumbe...
+l.77         }
+              
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.77         }
+              
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 95cf\else 
+                                                  \ifnum 30=\value {lstnumbe...
+l.78     }
+          
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.78     }
+          
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 56dd\else 
+                                                  \ifnum 31=\value {lstnumbe...
+l.79     void 
+              debug(){
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.79     void 
+              debug(){
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.79     void 
+              debug(){
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt b492\else 
+                                                  \ifnum 32=\value {lstnumbe...
+l.80         puts(
+                  ch);
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.80         puts(
+                  ch);
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt cd0f\else 
+                                                  \ifnum 33=\value {lstnumbe...
+l.81         for 
+                 (int i=1;i<=N;i++){
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.81         for 
+                 (int i=1;i<=N;i++){
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.81         for 
+                 (int i=1;i<=N;i++){
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 0d62\else 
+                                                  \ifnum 34=\value {lstnumbe...
+l.82             printf(
+                        "lc[%d]=%d\n",i,lc[i]);
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.82             printf(
+                        "lc[%d]=%d\n",i,lc[i]);
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 95cf\else 
+                                                  \ifnum 35=\value {lstnumbe...
+l.83         }
+              
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.83         }
+              
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 95cf\else 
+                                                  \ifnum 36=\value {lstnumbe...
+l.84     }
+          
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.84     }
+          
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 329b\else 
+                                                  \ifnum 37=\value {lstnumbe...
+l.85 };
+       
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.85 };
+       
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 3117\else 
+                                                  \ifnum 38=\value {lstnumbe...
+l.86 int 
+         main(){
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.86 int 
+         main(){
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.86 int 
+         main(){
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt a275\else 
+                                                  \ifnum 39=\value {lstnumbe...
+l.87     scanf(
+               "%s",s+1);
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.87     scanf(
+               "%s",s+1);
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 382e\else 
+                                                  \ifnum 40=\value {lstnumbe...
+l.88     Manacher 
+                  manacher(s);
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.88     Manacher 
+                  manacher(s);
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.88     Manacher 
+                  manacher(s);
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 9c07\else 
+                                                  \ifnum 41=\value {lstnumbe...
+l.89     manacher.
+                  debug();
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.89     manacher.
+                  debug();
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 7021\else 
+                                                  \ifnum 42=\value {lstnumbe...
+l.90     return 
+                0;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.90     return 
+                0;
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.90     return 
+                0;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 95cf\else 
+                                                  \ifnum 43=\value {lstnumbe...
+l.91 }
+      
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.91 }
+      
+? 
+) [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
+ (./main.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 35.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  6CC9EA0E8433FA7AE743649FD492354F;98.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ )
+(\end occurred when \iffalse on line 91 was incomplete)
+(\end occurred when \iffalse on line 90 was incomplete)
+(\end occurred when \iftrue on line 89 was incomplete)
+(\end occurred when \iffalse on line 88 was incomplete)
+(\end occurred when \iftrue on line 87 was incomplete)
+(\end occurred when \iffalse on line 86 was incomplete)
+(\end occurred when \iffalse on line 85 was incomplete)
+(\end occurred when \iffalse on line 84 was incomplete)
+(\end occurred when \iffalse on line 83 was incomplete)
+(\end occurred when \iftrue on line 82 was incomplete)
+(\end occurred when \iffalse on line 81 was incomplete)
+(\end occurred when \iftrue on line 80 was incomplete)
+(\end occurred when \iffalse on line 79 was incomplete)
+(\end occurred when \iffalse on line 78 was incomplete)
+(\end occurred when \iffalse on line 77 was incomplete)
+(\end occurred when \iffalse on line 76 was incomplete)
+(\end occurred when \iffalse on line 75 was incomplete)
+(\end occurred when \unless\iffalse on line 74 was incomplete)
+(\end occurred when \iftrue on line 73 was incomplete)
+(\end occurred when \iffalse on line 72 was incomplete)
+(\end occurred when \iffalse on line 71 was incomplete)
+(\end occurred when \iffalse on line 70 was incomplete)
+(\end occurred when \iftrue on line 69 was incomplete)
+(\end occurred when \iffalse on line 68 was incomplete)
+(\end occurred when \iffalse on line 67 was incomplete)
+(\end occurred when \iffalse on line 66 was incomplete)
+(\end occurred when \iffalse on line 65 was incomplete)
+(\end occurred when \iftrue on line 64 was incomplete)
+(\end occurred when \iffalse on line 63 was incomplete)
+(\end occurred when \iftrue on line 62 was incomplete)
+(\end occurred when \iftrue on line 61 was incomplete)
+(\end occurred when \iftrue on line 60 was incomplete)
+(\end occurred when \iffalse on line 59 was incomplete)
+(\end occurred when \iffalse on line 58 was incomplete)
+(\end occurred when \ifnum on line 57 was incomplete)
+(\end occurred when \iftrue on line 56 was incomplete)
+(\end occurred when \iffalse on line 55 was incomplete)
+(\end occurred when \iffalse on line 54 was incomplete)
+(\end occurred when \iffalse on line 53 was incomplete)
+(\end occurred when \iffalse on line 52 was incomplete)
+(\end occurred when \iffalse on line 51 was incomplete)
+(\end occurred when \iffalse on line 50 was incomplete)
+(\end occurred when \iffalse on line 49 was incomplete)
+(\end occurred when \ifnum on line 48 was incomplete) 
+Here is how much of TeX's memory you used:
+ 31623 strings out of 479819
+ 610410 string characters out of 5895846
+ 1255115 words of memory out of 5000000
+ 48221 multiletter control sequences out of 15000+600000
+ 536741 words of font info for 77 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 76i,11n,74p,869b,1439s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on main.pdf (3 pages).
