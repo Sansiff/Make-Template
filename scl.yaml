@@ -3,3 +3,8 @@
   files:
     - title: Manacher
       fname: Manacher.cpp
+- name: Math
+  dir: Math/
+  files:
+    - title: Linear_sieve
+      fname: linear_sieve.cpp
