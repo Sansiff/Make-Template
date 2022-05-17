@@ -1,0 +1,5 @@
+- name: String
+  dir: String/
+  files:
+    - title: Manacher
+      fname: Manacher.cpp

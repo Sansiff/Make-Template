@@ -1,0 +1,3 @@
+[submodule "Code-Library"]
+	path = Code-Library
+	url = http://github.com/Sansiff/Code-Library
