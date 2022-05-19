@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.5.17)  17 MAY 2022 23:55
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.5.17)  19 MAY 2022 19:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1007,7 +1007,7 @@ Package: xeCJK-listings 2020/02/14 v3.8.1 xeCJK patch file for listings
 LaTeX Warning: Unused global option(s):
     [9pt].
 
-No file main.aux.
+(./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -1021,7 +1021,7 @@ LaTeX Font Info:    ... okay on input line 5.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
 .
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 5.
@@ -1120,12 +1120,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
 LaTeX Info: Redefining \nameref on input line 5.
+
+(./main.out) (./main.out)
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1169,7 +1168,16 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 )
 [1
 
-]
+] (./main.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 2.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 2.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
@@ -1439,17 +1447,6 @@ l.63         for
 l.63         for 
                  (int i=n;i>=1;i--){
 ? 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 63.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 63.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 ! Extra \else.
 \thelstnumber ... {lstnumber}\relax \tt 6beb\else 
                                                   \ifnum 16=\value {lstnumbe...
@@ -1858,12 +1855,732 @@ l.91 }
 l.91 }
       
 ? 
-) [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.94 \subsection{Linear_sieve}
+                              
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.94 \subsection{Linear_sieve}
+                              
+? 
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 94.
+
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 302f\else 
+                                                  \ifnum 44=\value {lstnumbe...
+l.145 #
+       include<bits/stdc++.h>
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.145 #
+       include<bits/stdc++.h>
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 421c\else 
+                                                  \ifnum 45=\value {lstnumbe...
+l.146 using 
+            namespace std;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.146 using 
+            namespace std;
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.146 using 
+            namespace std;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 68e4\else 
+                                                  \ifnum 46=\value {lstnumbe...
+l.147 const 
+            int maxn = 1e7+10;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.147 const 
+            int maxn = 1e7+10;
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.147 const 
+            int maxn = 1e7+10;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 4085\else 
+                                                  \ifnum 47=\value {lstnumbe...
+l.148 typedef 
+              long long ll;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.148 typedef 
+              long long ll;
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.148 typedef 
+              long long ll;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 727f\else 
+                                                  \ifnum 48=\value {lstnumbe...
+l.149 bool 
+           used[maxn];
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.149 bool 
+           used[maxn];
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.149 bool 
+           used[maxn];
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt efe5\else 
+                                                  \ifnum 49=\value {lstnumbe...
+l.150 int 
+          mu[maxn];
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.150 int 
+          mu[maxn];
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.150 int 
+          mu[maxn];
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 7c8f\else 
+                                                  \ifnum 50=\value {lstnumbe...
+l.151 vector<
+             int> prime;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.151 vector<
+             int> prime;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt c882\else 
+                                                  \ifnum 51=\value {lstnumbe...
+l.152 ll 
+         f[maxn];
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.152 ll 
+         f[maxn];
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.152 ll 
+         f[maxn];
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt a0b1\else 
+                                                  \ifnum 52=\value {lstnumbe...
+l.153 int 
+          low[maxn];
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.153 int 
+          low[maxn];
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.153 int 
+          low[maxn];
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 22c5\else 
+                                                  \ifnum 53=\value {lstnumbe...
+l.154 void 
+           sieve(int size){
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.154 void 
+           sieve(int size){
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.154 void 
+           sieve(int size){
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 427e\else 
+                                                  \ifnum 54=\value {lstnumbe...
+l.155     //
+            f:multiplicative function;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.155     //
+            f:multiplicative function;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 7d97\else 
+                                                  \ifnum 55=\value {lstnumbe...
+l.156     assert(
+                 size < maxn);
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.156     assert(
+                 size < maxn);
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 7f5a\else 
+                                                  \ifnum 56=\value {lstnumbe...
+l.157     mu[
+             1] = 1;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.157     mu[
+             1] = 1;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt c6b9\else 
+                                                  \ifnum 57=\value {lstnumbe...
+l.158     f[
+            1] = 1;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.158     f[
+            1] = 1;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 40bd\else 
+                                                  \ifnum 58=\value {lstnumbe...
+l.159     for 
+              (int i=2;i<=size;i++){
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.159     for 
+              (int i=2;i<=size;i++){
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.159     for 
+              (int i=2;i<=size;i++){
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt efb1\else 
+                                                  \ifnum 59=\value {lstnumbe...
+l.160         if 
+                 (!used[i]){
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.160         if 
+                 (!used[i]){
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.160         if 
+                 (!used[i]){
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 1024\else 
+                                                  \ifnum 60=\value {lstnumbe...
+l.161             prime.
+                        push_back(i);
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.161             prime.
+                        push_back(i);
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 7171\else 
+                                                  \ifnum 61=\value {lstnumbe...
+l.162             mu[
+                     i] = -1;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.162             mu[
+                     i] = -1;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 427e\else 
+                                                  \ifnum 62=\value {lstnumbe...
+l.163             //
+                    f:TODO
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.163             //
+                    f:TODO
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt c21b\else 
+                                                  \ifnum 63=\value {lstnumbe...
+l.164             low[
+                      i] = i;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.164             low[
+                      i] = i;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 95cf\else 
+                                                  \ifnum 64=\value {lstnumbe...
+l.165         }
+               
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.165         }
+               
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt eb1a\else 
+                                                  \ifnum 65=\value {lstnumbe...
+l.166         for 
+                  (int j = 0;j < prime.size();j++){
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.166         for 
+                  (int j = 0;j < prime.size();j++){
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.166         for 
+                  (int j = 0;j < prime.size();j++){
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt d3c2\else 
+                                                  \ifnum 66=\value {lstnumbe...
+l.167             ll 
+                     nxt = 1ll * i * prime[j];
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.167             ll 
+                     nxt = 1ll * i * prime[j];
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.167             ll 
+                     nxt = 1ll * i * prime[j];
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt b561\else 
+                                                  \ifnum 67=\value {lstnumbe...
+l.168             if 
+                     (nxt > size)break;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.168             if 
+                     (nxt > size)break;
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.168             if 
+                     (nxt > size)break;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 6b89\else 
+                                                  \ifnum 68=\value {lstnumbe...
+l.169             used[
+                       nxt] = 1;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.169             used[
+                       nxt] = 1;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 073a\else 
+                                                  \ifnum 69=\value {lstnumbe...
+l.170             if 
+                     (i % prime[j]){
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.170             if 
+                     (i % prime[j]){
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.170             if 
+                     (i % prime[j]){
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt b9b8\else 
+                                                  \ifnum 70=\value {lstnumbe...
+l.171                 low[
+                          nxt] = prime[j];
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.171                 low[
+                          nxt] = prime[j];
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 66f9\else 
+                                                  \ifnum 71=\value {lstnumbe...
+l.172                 mu[
+                         nxt] = -mu[i];
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.172                 mu[
+                         nxt] = -mu[i];
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 427e\else 
+                                                  \ifnum 72=\value {lstnumbe...
+l.173                 //
+                        f: mod or not?
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.173                 //
+                        f: mod or not?
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 7225\else 
+                                                  \ifnum 73=\value {lstnumbe...
+l.174                 f[
+                        nxt] = f[i] * f[prime[j]];
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.174                 f[
+                        nxt] = f[i] * f[prime[j]];
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 8e2e\else 
+                                                  \ifnum 74=\value {lstnumbe...
+l.175             }e
+                    lse{
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.175             }e
+                    lse{
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 734b\else 
+                                                  \ifnum 75=\value {lstnumbe...
+l.176                 low[
+                          nxt] = prime[j] * low[i];
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.176                 low[
+                          nxt] = prime[j] * low[i];
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 8ec3\else 
+                                                  \ifnum 76=\value {lstnumbe...
+l.177                 mu[
+                         nxt] = 0;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.177                 mu[
+                         nxt] = 0;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt b401\else 
+                                                  \ifnum 77=\value {lstnumbe...
+l.178                 if 
+                         (low[nxt] != nxt){
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.178                 if 
+                         (low[nxt] != nxt){
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.178                 if 
+                         (low[nxt] != nxt){
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 427e\else 
+                                                  \ifnum 78=\value {lstnumbe...
+l.179                     //
+                            mod or not?
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.179                     //
+                            mod or not?
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 4d18\else 
+                                                  \ifnum 79=\value {lstnumbe...
+l.180                     f[
+                            nxt] = 1ll * f[low[nxt]] * f[nxt/low[nxt]];
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.180                     f[
+                            nxt] = 1ll * f[low[nxt]] * f[nxt/low[nxt]];
+? 
+[3]
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 8e2e\else 
+                                                  \ifnum 80=\value {lstnumbe...
+l.181                 }e
+                        lse{
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.181                 }e
+                        lse{
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 427e\else 
+                                                  \ifnum 81=\value {lstnumbe...
+l.182                     //
+                             i = prime[j] ^ k
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.182                     //
+                             i = prime[j] ^ k
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 427e\else 
+                                                  \ifnum 82=\value {lstnumbe...
+l.183                     //
+                            f:TODO
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.183                     //
+                            f:TODO
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 95cf\else 
+                                                  \ifnum 83=\value {lstnumbe...
+l.184                 }
+                       
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.184                 }
+                       
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 6173\else 
+                                                  \ifnum 84=\value {lstnumbe...
+l.185                 break;
+                            
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.185                 break;
+                            
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 95cf\else 
+                                                  \ifnum 85=\value {lstnumbe...
+l.186             }
+                   
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.186             }
+                   
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 95cf\else 
+                                                  \ifnum 86=\value {lstnumbe...
+l.187         }
+               
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.187         }
+               
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 95cf\else 
+                                                  \ifnum 87=\value {lstnumbe...
+l.188     }
+           
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.188     }
+           
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 95cf\else 
+                                                  \ifnum 88=\value {lstnumbe...
+l.189 }
+       
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.189 }
+       
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 3117\else 
+                                                  \ifnum 89=\value {lstnumbe...
+l.190 int 
+          main(){
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.190 int 
+          main(){
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.190 int 
+          main(){
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt ff91\else 
+                                                  \ifnum 90=\value {lstnumbe...
+l.191     sieve(
+                1e7);
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.191     sieve(
+                1e7);
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 7021\else 
+                                                  \ifnum 91=\value {lstnumbe...
+l.192     return 
+                 0;
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.192     return 
+                 0;
+? 
+! Extra \else.
+\lst@PrintToken ...@Output \lst@letterfalse \else 
+                                                  \lst@OutputOther \let \lst...
+l.192     return 
+                 0;
+? 
+! Extra \else.
+\thelstnumber ... {lstnumber}\relax \tt 95cf\else 
+                                                  \ifnum 92=\value {lstnumbe...
+l.193 }
+       
+? 
+! Extra \else.
+\hyper@makecurrent ...perGlobalCurrentHref }\else 
+                                                  \Hy@GlobalStepCount \Hy@li...
+l.193 }
+       
+? 
+)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.31 \end{document}
+                   
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.31 \end{document}
+                   
+? 
+[4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 31.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 31.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 35.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 31.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 31.
 
 
 Package rerunfilecheck Warning: File `main.out' has changed.
@@ -1871,12 +2588,61 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  6CC9EA0E8433FA7AE743649FD492354F;98.
+(rerunfilecheck)             Before: 6CC9EA0E8433FA7AE743649FD492354F;98
+(rerunfilecheck)             After:  B00A79E0F0F3475212A899858AC56A27;197.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  )
+(\end occurred when \iffalse on line 193 was incomplete)
+(\end occurred when \iffalse on line 192 was incomplete)
+(\end occurred when \iftrue on line 191 was incomplete)
+(\end occurred when \iffalse on line 190 was incomplete)
+(\end occurred when \iffalse on line 189 was incomplete)
+(\end occurred when \iffalse on line 188 was incomplete)
+(\end occurred when \iffalse on line 187 was incomplete)
+(\end occurred when \iffalse on line 186 was incomplete)
+(\end occurred when \iftrue on line 185 was incomplete)
+(\end occurred when \iffalse on line 184 was incomplete)
+(\end occurred when \ifnum on line 183 was incomplete)
+(\end occurred when \ifnum on line 182 was incomplete)
+(\end occurred when \unless\iffalse on line 181 was incomplete)
+(\end occurred when \iftrue on line 180 was incomplete)
+(\end occurred when \ifnum on line 179 was incomplete)
+(\end occurred when \iffalse on line 178 was incomplete)
+(\end occurred when \iftrue on line 177 was incomplete)
+(\end occurred when \iftrue on line 176 was incomplete)
+(\end occurred when \unless\iffalse on line 175 was incomplete)
+(\end occurred when \iftrue on line 174 was incomplete)
+(\end occurred when \ifnum on line 173 was incomplete)
+(\end occurred when \iftrue on line 172 was incomplete)
+(\end occurred when \iftrue on line 171 was incomplete)
+(\end occurred when \iffalse on line 170 was incomplete)
+(\end occurred when \iftrue on line 169 was incomplete)
+(\end occurred when \iffalse on line 168 was incomplete)
+(\end occurred when \iffalse on line 167 was incomplete)
+(\end occurred when \iffalse on line 166 was incomplete)
+(\end occurred when \iffalse on line 165 was incomplete)
+(\end occurred when \iftrue on line 164 was incomplete)
+(\end occurred when \ifnum on line 163 was incomplete)
+(\end occurred when \iftrue on line 162 was incomplete)
+(\end occurred when \iftrue on line 161 was incomplete)
+(\end occurred when \iffalse on line 160 was incomplete)
+(\end occurred when \iffalse on line 159 was incomplete)
+(\end occurred when \iftrue on line 158 was incomplete)
+(\end occurred when \iftrue on line 157 was incomplete)
+(\end occurred when \iftrue on line 156 was incomplete)
+(\end occurred when \ifnum on line 155 was incomplete)
+(\end occurred when \iffalse on line 154 was incomplete)
+(\end occurred when \iffalse on line 153 was incomplete)
+(\end occurred when \iffalse on line 152 was incomplete)
+(\end occurred when \iftrue on line 151 was incomplete)
+(\end occurred when \iffalse on line 150 was incomplete)
+(\end occurred when \iffalse on line 149 was incomplete)
+(\end occurred when \iffalse on line 148 was incomplete)
+(\end occurred when \iffalse on line 147 was incomplete)
+(\end occurred when \iffalse on line 146 was incomplete)
+(\end occurred when \ifnum on line 145 was incomplete)
 (\end occurred when \iffalse on line 91 was incomplete)
 (\end occurred when \iffalse on line 90 was incomplete)
 (\end occurred when \iftrue on line 89 was incomplete)
@@ -1922,12 +2688,12 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 (\end occurred when \iffalse on line 49 was incomplete)
 (\end occurred when \ifnum on line 48 was incomplete) 
 Here is how much of TeX's memory you used:
- 31623 strings out of 479819
- 610410 string characters out of 5895846
- 1255115 words of memory out of 5000000
- 48221 multiletter control sequences out of 15000+600000
- 536741 words of font info for 77 fonts, out of 8000000 for 9000
+ 31742 strings out of 479819
+ 611574 string characters out of 5895846
+ 1138704 words of memory out of 5000000
+ 48324 multiletter control sequences out of 15000+600000
+ 540891 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 76i,11n,74p,869b,1439s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 76i,12n,74p,869b,1898s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.pdf (3 pages).
+Output written on main.pdf (4 pages).

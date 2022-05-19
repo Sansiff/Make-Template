@@ -3,8 +3,20 @@
   files:
     - title: Manacher
       fname: Manacher.cpp
+      
 - name: Math
   dir: Math/
   files:
     - title: Linear_sieve
       fname: linear_sieve.cpp
+
+
+- name
+  dir: Data Structure/
+  files:
+    - title: Fenwick
+      fname: Fenwick.cpp
+    - title: K-Dtree
+      fname: K-Dtree.cpp
+    - title: 可持久化平衡树
+      fname: 可持久化平衡树.cpp

@@ -5,8 +5,7 @@ build/main.pdf: $(SRCS) Makefile scl.yaml clean update
 	mkdir -p build/
 	python2 gen.py > build/code.tex
 	cp tex/* build/
-	cd build && xelatex main.tex
-	cd build && xelatex main.tex
+	cd build && xelatex --file-line-error main.tex
 
 
 .PHONY: clean check
@@ -20,7 +19,6 @@ clean:
 update:
 	mkdir -p src/
 	cd src/ && rm * -rf
-	#git submodule init && git submodule update
 	git submodule init && git submodule update && git submodule update --remote
 	cp Code-Library src/ -rf
 	cd src/Code-Library/ && rm -rf .idea/ cmake-build-debug/ .git/ && rm -f .gitignore README.md CMakeLists.txt
