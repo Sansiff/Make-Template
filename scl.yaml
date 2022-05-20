@@ -12,3 +12,19 @@
       fname: linear_sieve.cpp
     - title: 组合数预处理
       fname: 组合数预处理.cpp
+- name: Data Structure
+  dir: Data_Structure/
+  files:
+    - title: Fenwick
+      fname: Fenwick.cpp
+    - title: K-Dtree
+      fname: K-Dtree.cpp
+    - title: 可持久化平衡树
+      fname: 可持久化平衡树.cpp
+- name: Others
+  dir: Others/
+  files:
+    - title: Debugger
+      fname: debugger.cpp
+    - title: Fast IO
+      fname: fast_io.cpp

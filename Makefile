@@ -19,8 +19,7 @@ clean:
 update:
 	mkdir -p src/
 	cd src/ && rm * -rf
-	git submodule update --init --recursive
-	git pull && git submodule update
+	#git submodule update --remote
 	cp Code-Library src/ -rf
 	cd src/Code-Library/ && rm -rf .idea/ cmake-build-debug/ .git/ && rm -f .gitignore README.md CMakeLists.txt
 	cd src/ && mv Code-Library/* ./ && rm -rf Code-Library

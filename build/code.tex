@@ -1,0 +1,1105 @@
+\section{String}
+\subsection{String Hash}
+\createlinenumber{1}{302f}
+\createlinenumber{2}{421c}
+\createlinenumber{3}{4085}
+\createlinenumber{4}{0dfa}
+\createlinenumber{5}{9e47}
+\createlinenumber{6}{a8cb}
+\createlinenumber{7}{8bbb}
+\createlinenumber{8}{1937}
+\createlinenumber{9}{8048}
+\createlinenumber{10}{d0e2}
+\createlinenumber{11}{c429}
+\createlinenumber{12}{8f98}
+\createlinenumber{13}{1948}
+\createlinenumber{14}{e2fd}
+\createlinenumber{15}{b301}
+\createlinenumber{16}{57ea}
+\createlinenumber{17}{9776}
+\createlinenumber{18}{4d27}
+\createlinenumber{19}{cea9}
+\createlinenumber{20}{9c20}
+\createlinenumber{21}{95cf}
+\createlinenumber{22}{e1b8}
+\createlinenumber{23}{7223}
+\createlinenumber{24}{8cae}
+\createlinenumber{25}{95cf}
+\createlinenumber{26}{9490}
+\createlinenumber{27}{d4c8}
+\createlinenumber{28}{0c13}
+\createlinenumber{29}{329b}
+\createlinenumber{30}{427e}
+\createlinenumber{31}{427e}
+\createlinenumber{32}{95cf}
+\createlinenumber{33}{cf66}
+\createlinenumber{34}{01ee}
+\createlinenumber{35}{95cf}
+\createlinenumber{36}{3117}
+\createlinenumber{37}{7618}
+\createlinenumber{38}{498a}
+\createlinenumber{39}{04cb}
+\createlinenumber{40}{4b64}
+\createlinenumber{41}{8e29}
+\createlinenumber{42}{96ec}
+\createlinenumber{43}{427e}
+\createlinenumber{44}{4145}
+\createlinenumber{45}{5998}
+\createlinenumber{46}{6dbf}
+\createlinenumber{47}{edbb}
+\createlinenumber{48}{95cf}
+\createlinenumber{49}{bf92}
+\createlinenumber{50}{427e}
+\createlinenumber{51}{6dbf}
+\createlinenumber{52}{e6c2}
+\createlinenumber{53}{95cf}
+\createlinenumber{54}{f03f}
+\createlinenumber{55}{ab6a}
+\createlinenumber{56}{329b}
+\createlinenumber{57}{427e}
+\createlinenumber{58}{05b4}
+\createlinenumber{59}{29e3}
+\createlinenumber{60}{329b}
+\createlinenumber{61}{2cc8}
+\createlinenumber{62}{c439}
+\createlinenumber{63}{320d}
+\createlinenumber{64}{096a}
+\createlinenumber{65}{ff4e}
+\createlinenumber{66}{037f}
+\createlinenumber{67}{8ecd}
+\createlinenumber{68}{8951}
+\createlinenumber{69}{95cf}
+\createlinenumber{70}{95cf}
+\createlinenumber{71}{7021}
+\createlinenumber{72}{95cf}
+\begin{lstlisting}[language=C++]
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+#ifdef LOCAL
+#include <debugger>
+#else
+#define debug(...) 42
+#endif
+template <typename T> void chkmax(T &x, T y) { x = x >= y ? x : y; }
+template <typename T> void chkmin(T &x, T y) { x = x <= y ? x : y; }
+mt19937_64 rnd(chrono::steady_clock::now().time_since_epoch().count());
+constexpr int N = 1000001;
+using ull = unsigned long long;
+using HH = pair<unsigned long long, unsigned long long> ;
+string s; 
+HH base, Hash[N + 1]; 
+constexpr HH mod = {1000000009, 1000000007};
+HH operator*(const HH &a, const HH &b) {
+  return {(a.first * b.first) % mod.first,
+    (a.second*b.second)%mod.second};
+}
+HH operator+(const HH &a, const HH &b) {
+  return {(a.first + b.first) % mod.first, 
+    (a.second + b.second) % mod.second};
+}
+HH operator-(const HH &a, const HH &b) {
+  return {(a.first - b.first + mod.first) % mod.first, 
+    (a.second - b.second + mod.second) % mod.second
+  };
+//return{((a.first%mod.first)+mod.first-(b.first%mod.first))%mod.first,
+//  ((a.second%mod.second)+mod.second-(b.second%mod.second))%mod.second};
+}
+HH operator*(const HH &a, const ull &b) {
+  return {(a.first * b) % mod.first, (a.second * b) % mod.second};
+}
+int main() {
+  ios::sync_with_stdio(false);
+  cin.tie(nullptr);
+  base = {rnd() % mod.first, rnd() % mod.second};
+  Hash[0] = {1, 1};
+  for(int i = 1; i <= N; i ++ ) Hash[i] = Hash[i - 1] * base ;
+  int n, q; cin >> n >> q >> s;
+  
+  vector<HH> a(n + 1), b(n + 1);
+  a[0] = b[0] = {1, 1};
+  for(int i = 1; i <= n; i ++ ) {
+    a[i] = a[i - 1] * base + a[0] *  (s[i - 1] - 'a' + 1) ;
+  }
+  reverse(s.begin(), s.end());
+ 
+  for(int i = 1; i <= n; i ++ ) {
+    b[i] = b[i - 1] * base + b[0] *  (s[i - 1] - 'a' + 1);
+  }
+  auto get1 = [&] (int l, int r) {
+    return a[r] - (a[l - 1] * Hash[r - l + 1]);
+  };
+ 
+  auto get2 = [&] (int l, int r) {
+    return b[r] - (b[l - 1] * Hash[r - l + 1]);
+  };
+  while(q -- ) {
+    int l, r; cin >> l >> r;
+    int x = r - l + 1;
+    bool flag = (get1(l, r) == get2(n - l - x + 2, n - l + 1));
+    if(flag) cout << "Budada\n";
+    else{
+      if(x & 1) cout << "Putata\n";
+      else cout << "Budada\n";
+    }
+  }
+  return 0;
+}
+\end{lstlisting}
+\subsection{Manacher}
+\createlinenumber{73}{427e}
+\createlinenumber{74}{302f}
+\createlinenumber{75}{421c}
+\createlinenumber{76}{427e}
+\createlinenumber{77}{3596}
+\createlinenumber{78}{427e}
+\createlinenumber{79}{3d88}
+\createlinenumber{80}{adbc}
+\createlinenumber{81}{b8fe}
+\createlinenumber{82}{427e}
+\createlinenumber{83}{d9ed}
+\createlinenumber{84}{44e9}
+\createlinenumber{85}{5839}
+\createlinenumber{86}{e052}
+\createlinenumber{87}{05a8}
+\createlinenumber{88}{9ad1}
+\createlinenumber{89}{9e84}
+\createlinenumber{90}{5400}
+\createlinenumber{91}{c220}
+\createlinenumber{92}{95cf}
+\createlinenumber{93}{cbe1}
+\createlinenumber{94}{95cf}
+\createlinenumber{95}{244d}
+\createlinenumber{96}{95cf}
+\createlinenumber{97}{427e}
+\createlinenumber{98}{3117}
+\createlinenumber{99}{d703}
+\createlinenumber{100}{cf96}
+\createlinenumber{101}{5264}
+\createlinenumber{102}{1294}
+\createlinenumber{103}{e0c8}
+\createlinenumber{104}{c0d0}
+\createlinenumber{105}{95cf}
+\createlinenumber{106}{5256}
+\createlinenumber{107}{0a17}
+\createlinenumber{108}{1156}
+\createlinenumber{109}{95cf}
+\createlinenumber{110}{7021}
+\createlinenumber{111}{95cf}
+\createlinenumber{112}{427e}
+\begin{lstlisting}[language=C++]
+// https://www.acwing.com/problem/content/description/141/
+#include <bits/stdc++.h>
+using namespace std;
+
+constexpr int N = 2000010;
+
+int n, m, Case;
+char s[N], str[N];
+int p[N];
+
+int manacher() {
+  int rt = 0, mid = 0;
+  int res = 0;
+  for(int i = 1; i <= m; i ++ ) {
+    p[i] = i < rt ? min(p[2 * mid - i], rt - i) : 1;
+    while(str[i + p[i]] == str[i - p[i]]) ++ p[i];
+    if(i + p[i] > rt) {
+      rt = i + p[i];
+      mid = i;
+    }
+    res = max(res, p[i] - 1);
+  }
+  return res;
+}
+
+int main() {
+  str[0] = '!', str[1] = '#';
+  while(scanf("%s", s), s[0] != 'E') {
+    n = strlen(s);
+    for(int i = 0; i < n; i ++ ) {
+      str[i * 2 + 2] = s[i];
+      str[i * 2 + 3] = '#';
+    }
+    m = n * 2 + 1;
+    str[m + 1] = '@';
+    printf("Case %d: %d\n", ++ Case, manacher());
+  }
+  return 0;
+}
+
+\end{lstlisting}
+\section{Math}
+\subsection{Linear Sieve}
+\createlinenumber{113}{302f}
+\createlinenumber{114}{421c}
+\createlinenumber{115}{68e4}
+\createlinenumber{116}{4085}
+\createlinenumber{117}{727f}
+\createlinenumber{118}{efe5}
+\createlinenumber{119}{7c8f}
+\createlinenumber{120}{c882}
+\createlinenumber{121}{a0b1}
+\createlinenumber{122}{22c5}
+\createlinenumber{123}{427e}
+\createlinenumber{124}{7d97}
+\createlinenumber{125}{7f5a}
+\createlinenumber{126}{c6b9}
+\createlinenumber{127}{40bd}
+\createlinenumber{128}{efb1}
+\createlinenumber{129}{1024}
+\createlinenumber{130}{7171}
+\createlinenumber{131}{427e}
+\createlinenumber{132}{c21b}
+\createlinenumber{133}{95cf}
+\createlinenumber{134}{eb1a}
+\createlinenumber{135}{d3c2}
+\createlinenumber{136}{b561}
+\createlinenumber{137}{6b89}
+\createlinenumber{138}{073a}
+\createlinenumber{139}{b9b8}
+\createlinenumber{140}{66f9}
+\createlinenumber{141}{427e}
+\createlinenumber{142}{7225}
+\createlinenumber{143}{8e2e}
+\createlinenumber{144}{734b}
+\createlinenumber{145}{8ec3}
+\createlinenumber{146}{b401}
+\createlinenumber{147}{427e}
+\createlinenumber{148}{4d18}
+\createlinenumber{149}{8e2e}
+\createlinenumber{150}{427e}
+\createlinenumber{151}{427e}
+\createlinenumber{152}{95cf}
+\createlinenumber{153}{6173}
+\createlinenumber{154}{95cf}
+\createlinenumber{155}{95cf}
+\createlinenumber{156}{95cf}
+\createlinenumber{157}{95cf}
+\createlinenumber{158}{3117}
+\createlinenumber{159}{ff91}
+\createlinenumber{160}{7021}
+\createlinenumber{161}{95cf}
+\begin{lstlisting}[language=C++]
+#include<bits/stdc++.h>
+using namespace std;
+const int maxn = 1e7+10;
+typedef long long ll;
+bool used[maxn];
+int mu[maxn];
+vector<int> prime;
+ll f[maxn];
+int low[maxn];
+void sieve(int size){
+    //f:multiplicative function;
+    assert(size < maxn);
+    mu[1] = 1;
+    f[1] = 1;
+    for (int i=2;i<=size;i++){
+        if (!used[i]){
+            prime.push_back(i);
+            mu[i] = -1;
+            //f:TODO
+            low[i] = i;
+        }
+        for (int j = 0;j < prime.size();j++){
+            ll nxt = 1ll * i * prime[j];
+            if (nxt > size)break;
+            used[nxt] = 1;
+            if (i % prime[j]){
+                low[nxt] = prime[j];
+                mu[nxt] = -mu[i];
+                //f: mod or not?
+                f[nxt] = f[i] * f[prime[j]];
+            }else{
+                low[nxt] = prime[j] * low[i];
+                mu[nxt] = 0;
+                if (low[nxt] != nxt){
+                    //mod or not?
+                    f[nxt] = 1ll * f[low[nxt]] * f[nxt/low[nxt]];
+                }else{
+                    // i = prime[j] ^ k
+                    //f:TODO
+                }
+                break;
+            }
+        }
+    }
+}
+int main(){
+    sieve(1e7);
+    return 0;
+}
+\end{lstlisting}
+\subsection{组合数预处理}
+\createlinenumber{162}{5bf2}
+\createlinenumber{163}{427e}
+\createlinenumber{164}{182f}
+\createlinenumber{165}{427e}
+\createlinenumber{166}{7ce8}
+\createlinenumber{167}{3bd1}
+\createlinenumber{168}{f1be}
+\createlinenumber{169}{ee0f}
+\createlinenumber{170}{95cf}
+\createlinenumber{171}{427e}
+\createlinenumber{172}{8f3b}
+\createlinenumber{173}{9ba1}
+\createlinenumber{174}{3c9e}
+\createlinenumber{175}{187e}
+\createlinenumber{176}{5ada}
+\createlinenumber{177}{478f}
+\createlinenumber{178}{feef}
+\createlinenumber{179}{d916}
+\createlinenumber{180}{35f7}
+\createlinenumber{181}{8c7e}
+\createlinenumber{182}{beed}
+\createlinenumber{183}{5fa9}
+\createlinenumber{184}{1b61}
+\createlinenumber{185}{aa0b}
+\createlinenumber{186}{5db7}
+\createlinenumber{187}{eadc}
+\createlinenumber{188}{ef3a}
+\createlinenumber{189}{c8b8}
+\createlinenumber{190}{1156}
+\createlinenumber{191}{ae48}
+\createlinenumber{192}{e758}
+\createlinenumber{193}{a92c}
+\createlinenumber{194}{51b4}
+\createlinenumber{195}{d380}
+\createlinenumber{196}{427e}
+\createlinenumber{197}{329b}
+\createlinenumber{198}{427e}
+\createlinenumber{199}{d6e9}
+\createlinenumber{200}{427e}
+\createlinenumber{201}{75c9}
+\createlinenumber{202}{80f5}
+\createlinenumber{203}{7860}
+\createlinenumber{204}{ee0f}
+\createlinenumber{205}{95cf}
+\createlinenumber{206}{427e}
+\createlinenumber{207}{8334}
+\createlinenumber{208}{427e}
+\createlinenumber{209}{ed5b}
+\createlinenumber{210}{427e}
+\createlinenumber{211}{5d53}
+\createlinenumber{212}{8ae2}
+\createlinenumber{213}{4e8b}
+\createlinenumber{214}{ea9a}
+\createlinenumber{215}{95cf}
+\createlinenumber{216}{427e}
+\begin{lstlisting}[language=C++]
+const int MOD = 998244353;
+
+inline int mod(int x) {return x >= MOD ? x - MOD : x;}
+
+inline int ksm(int a, int b) {
+  int ret = 1; a = mod(a);
+  for(; b; b >>= 1, a = 1LL * a * a % MOD) if(b & 1) ret = 1LL * ret * a % MOD;
+  return ret;
+}
+
+template<int MOD> 
+struct modint {
+  int x;
+  modint() {x = 0; }
+  modint(int y) {x = y;}
+  inline modint inv() const { return modint{ksm(x, MOD - 2)}; }
+  explicit inline operator int() { return x; }
+  friend inline modint operator + (const modint &a, const modint& b) { return modint(mod(a.x + b.x)); }
+  friend inline modint operator - (const modint &a, const modint& b) { return modint(mod(a.x - b.x + MOD)); }
+  friend inline modint operator * (const modint &a, const modint& b) { return modint(1ll * a.x * b.x % MOD); }
+  friend inline modint operator / (const modint &a, const modint& b) { return modint(1ll * a.x * b.inv().x % MOD); }
+  friend inline modint operator - (const modint &a) { return modint(mod(MOD - a.x)); }
+  friend inline modint& operator += (modint &a, const modint& b) { return a = a + b; }
+  friend inline modint& operator -= (modint &a, const modint& b) { return a = a - b; }
+  friend inline modint& operator *= (modint &a, const modint& b) { return a = a * b; }
+  friend inline modint& operator /= (modint &a, const modint& b) { return a = a / b; }
+  friend auto &operator >> (istream &i, modint &a) {return i >> a.x; }
+  friend auto &operator << (ostream &o, const modint &z) { return o << z.x; }
+  inline bool operator == (const modint &b) { return x == b.x; }
+  inline bool operator != (const modint &b) { return x != b.x; }
+  inline bool operator < (const modint &a) { return x < a.x; }
+  inline bool operator <= (const modint &a) { return x <= a.x; }
+  inline bool operator > (const modint &a) { return x > a.x; }
+  inline bool operator >= (const modint &a) { return x >= a.x; }
+  
+};
+
+typedef modint<MOD> mint;
+
+inline mint ksm(mint a, int b) {
+	mint ret = 1; 
+	for(; b; b >>= 1, a = a * a ) if(b & 1) ret = ret * a ;
+	return ret;
+}
+
+const int N = 2e5 + 10;
+
+mint fact[N + 1], infact[N + 1], inv[N + 1];
+
+void init() {
+  fact[0] = 1; for(int i = 1; i <= N; ++ i ) { fact[i] = fact[i - 1] * i; }
+  infact[N] = ksm(fact[N], MOD - 2); for(int i = N - 1; i >= 0; -- i ) infact[i] = infact[i + 1] * (i + 1);
+  inv[0] = inv[1] = 1; for(int i = 2; i <= N; ++ i) inv[i] = inv[MOD % i] * (MOD - MOD / i);
+}
+
+\end{lstlisting}
+\section{Data Structure}
+\subsection{Fenwick}
+\createlinenumber{217}{b7ec}
+\createlinenumber{218}{c881}
+\createlinenumber{219}{63d4}
+\createlinenumber{220}{2d6b}
+\createlinenumber{221}{5c83}
+\createlinenumber{222}{427e}
+\createlinenumber{223}{2372}
+\createlinenumber{224}{bf4d}
+\createlinenumber{225}{95cf}
+\createlinenumber{226}{427e}
+\createlinenumber{227}{2be2}
+\createlinenumber{228}{4494}
+\createlinenumber{229}{daba}
+\createlinenumber{230}{f2b1}
+\createlinenumber{231}{95cf}
+\createlinenumber{232}{95cf}
+\createlinenumber{233}{427e}
+\createlinenumber{234}{1e26}
+\createlinenumber{235}{3105}
+\createlinenumber{236}{8791}
+\createlinenumber{237}{7751}
+\createlinenumber{238}{436b}
+\createlinenumber{239}{95cf}
+\createlinenumber{240}{aa78}
+\createlinenumber{241}{95cf}
+\createlinenumber{242}{329b}
+\begin{lstlisting}[language=C++]
+template <typename T>
+class fenwick {
+ public:
+  vector<T> fenw;
+  int n;
+ 
+  fenwick(int _n) : n(_n) {
+    fenw.resize(n);
+  }
+ 
+  void modify(int x, T v) {
+    while (x < n) {
+      fenw[x] += v;
+      x |= (x + 1);
+    }
+  }
+ 
+  T get(int x) {
+    T v{};
+    while (x >= 0) {
+      v += fenw[x];
+      x = (x & (x + 1)) - 1;
+    }
+    return v;
+  }
+};
+\end{lstlisting}
+\subsection{K-Dtree}
+\createlinenumber{243}{1bdb}
+\createlinenumber{244}{0c7b}
+\createlinenumber{245}{e7f4}
+\createlinenumber{246}{e793}
+\createlinenumber{247}{86a0}
+\createlinenumber{248}{6690}
+\createlinenumber{249}{c846}
+\createlinenumber{250}{7b29}
+\createlinenumber{251}{2176}
+\createlinenumber{252}{532a}
+\createlinenumber{253}{81e7}
+\createlinenumber{254}{f1a7}
+\createlinenumber{255}{0654}
+\createlinenumber{256}{f4d6}
+\createlinenumber{257}{aa5d}
+\createlinenumber{258}{95cf}
+\createlinenumber{259}{4dac}
+\createlinenumber{260}{329b}
+\createlinenumber{261}{82af}
+\createlinenumber{262}{9507}
+\createlinenumber{263}{2401}
+\createlinenumber{264}{45a3}
+\createlinenumber{265}{9ea5}
+\createlinenumber{266}{ce79}
+\createlinenumber{267}{f6bc}
+\createlinenumber{268}{962d}
+\createlinenumber{269}{20e2}
+\createlinenumber{270}{8130}
+\createlinenumber{271}{962d}
+\createlinenumber{272}{0bf0}
+\createlinenumber{273}{85f7}
+\createlinenumber{274}{d85f}
+\createlinenumber{275}{962d}
+\createlinenumber{276}{b60c}
+\createlinenumber{277}{5157}
+\createlinenumber{278}{3d45}
+\createlinenumber{279}{904b}
+\createlinenumber{280}{e7aa}
+\createlinenumber{281}{02ac}
+\createlinenumber{282}{eab6}
+\createlinenumber{283}{f84d}
+\createlinenumber{284}{0f77}
+\createlinenumber{285}{f7f0}
+\createlinenumber{286}{9a13}
+\createlinenumber{287}{8569}
+\createlinenumber{288}{8aa6}
+\createlinenumber{289}{75a6}
+\createlinenumber{290}{5850}
+\createlinenumber{291}{77b5}
+\createlinenumber{292}{d2c9}
+\createlinenumber{293}{6060}
+\createlinenumber{294}{6592}
+\createlinenumber{295}{b6db}
+\createlinenumber{296}{035a}
+\createlinenumber{297}{2d77}
+\createlinenumber{298}{5bf9}
+\createlinenumber{299}{301c}
+\createlinenumber{300}{95cf}
+\createlinenumber{301}{d23e}
+\createlinenumber{302}{b055}
+\createlinenumber{303}{1330}
+\createlinenumber{304}{95cf}
+\createlinenumber{305}{037f}
+\createlinenumber{306}{1330}
+\createlinenumber{307}{b055}
+\createlinenumber{308}{95cf}
+\createlinenumber{309}{b10d}
+\createlinenumber{310}{d2c9}
+\createlinenumber{311}{68dd}
+\createlinenumber{312}{3938}
+\createlinenumber{313}{703c}
+\createlinenumber{314}{34b9}
+\createlinenumber{315}{2c2d}
+\createlinenumber{316}{f705}
+\createlinenumber{317}{d296}
+\createlinenumber{318}{0788}
+\createlinenumber{319}{95cf}
+\createlinenumber{320}{037f}
+\createlinenumber{321}{0788}
+\createlinenumber{322}{d296}
+\createlinenumber{323}{95cf}
+\createlinenumber{324}{28f2}
+\createlinenumber{325}{d2c9}
+\createlinenumber{326}{6060}
+\createlinenumber{327}{6592}
+\createlinenumber{328}{b6db}
+\createlinenumber{329}{34b9}
+\createlinenumber{330}{71fd}
+\createlinenumber{331}{d23e}
+\createlinenumber{332}{d809}
+\createlinenumber{333}{5162}
+\createlinenumber{334}{95cf}
+\createlinenumber{335}{037f}
+\createlinenumber{336}{5162}
+\createlinenumber{337}{d809}
+\createlinenumber{338}{95cf}
+\createlinenumber{339}{95cf}
+\createlinenumber{340}{dfd3}
+\createlinenumber{341}{2795}
+\createlinenumber{342}{95cf}
+\createlinenumber{343}{427e}
+\begin{lstlisting}[language=C++]
+/*---KD-Tree---*/
+template<class T>
+inline T sqr(T&x){return x*x;}
+namespace KDT { 
+    const int N = 1e5 + 10, M = N << 1;
+#define lc ch[x][0]
+#define rc ch[x][1]
+  struct pnt {
+    int x[2];
+  }a[N];
+  int opt;
+  struct node { 
+    int dis; 
+    node(int a = 0) { 
+      dis = a; 
+    }
+    inline bool operator <(const node& other)const { return dis > other.dis; } 
+  };//??? 
+  priority_queue<node>q;
+  int ans;
+  inline bool cmp(register pnt a, register pnt b) { return a.x[opt] < b.x[opt]; }
+  inline int f(pnt a, pnt b) { return sqr(a.x[0] - b.x[0]) + sqr(a.x[1] - b.x[1]); }
+  int ch[M][2], minn[M][2], maxn[M][2], cnt;
+  pnt*d[M];
+  inline void pushup(const int&x) {
+    for (int i = 0; i < 2; ++i)
+      maxn[x][i] = minn[x][i] = d[x]->x[i];
+    if (lc)
+      for (int i = 0; i < 2; ++i)
+        maxn[x][i] = max(maxn[x][i], maxn[lc][i]), 
+        minn[x][i] = min(minn[x][i], minn[lc][i]);
+    if (rc)
+      for (int i = 0; i < 2; ++i)
+        maxn[x][i] = max(maxn[x][i], maxn[rc][i]), 
+        minn[x][i] = min(minn[x][i], minn[rc][i]);
+  }inline int build(int L, int R, int k) {
+    if (L > R)return 0;
+    int x = ++cnt; 
+    opt = k;
+    int mid = (L + R) >> 1;
+    nth_element(a + L, a + mid, a + R + 1, cmp);
+    d[x] = &a[mid];
+    lc = build(L, mid - 1, k ^ 1), rc = build(mid + 1, R, k ^ 1);
+    pushup(x);
+  }inline int mindis(pnt&a, int b) {
+    return sqr(max(a.x[0]-maxn[b][0],0)+max(minn[b][0]-a.x[0],0))+sqr(max(a.x[1]-maxn[b][1],0)+max(minn[b][1]-a.x[1],0));
+  }inline int maxdis(pnt&a, int b) {//????
+    return max(sqr(maxn[b][0] - a.x[0]), sqr(minn[b][0] - a.x[0])) + max(sqr(maxn[b][1] - a.x[1]), sqr(minn[b][1] - a.x[1]));
+   }inline void kqueryMax(int x, pnt&O) {//k?????
+     if(!x)return;
+    int dl = -inf, dr = -inf;
+   	if (lc)dl = maxdis(O, lc);
+      if (rc)dr = maxdis(O, rc);
+      if (d[x] != &O) {
+        int dis = f(*d[x], O);
+        if (q.top().dis < dis)
+          q.pop(), q.push(dis);
+      }
+      if (dl > dr) { 
+        if (q.top().dis < dl)kqueryMax(lc, O); 
+        if (q.top().dis < dr)kqueryMax(rc, O); 
+      }
+      else { 
+        if (q.top().dis < dr)kqueryMax(rc, O); 
+        if (q.top().dis < dl)kqueryMax(lc, O); 
+      }
+   }inline void queryMin(int x, pnt&O) {//????
+     if (!x)return;
+     int dl = inf, dr = inf;
+     if (lc)dl = mindis(O, lc);
+     if (rc)dr = mindis(O, rc);
+     if (d[x] != &O)//??????
+        ans = min(ans, f(*d[x], O));
+     if (dl < dr) {
+       if (dl < ans)queryMin(lc, O);
+       if (dr < ans)queryMin(rc, O);
+     }
+     else {
+       if (dr < ans)queryMin(rc, O);
+       if (dl < ans)queryMin(lc, O);
+     }
+   }inline void queryMax(int x, pnt& O) {//????
+     if (!x)return;
+     int dl = -inf, dr = -inf;
+     if (lc)dl = maxdis(O, lc);
+     if (rc)dr = maxdis(O, rc);
+     if (d[x] != &O)//??????
+        ans = max(ans, f(*d[x], O));
+     if (dl > dr) {
+       if (ans < dl)queryMax(lc, O);
+       if (ans < dr)queryMax(rc, O);
+     }
+     else {
+       if (ans < dr)queryMax(rc, O);
+       if (ans < dl)queryMax(lc, O);
+     }
+  }
+#undef lc
+#undef rc 
+}
+
+\end{lstlisting}
+\subsection{可持久化平衡树}
+\createlinenumber{344}{427e}
+\createlinenumber{345}{427e}
+\createlinenumber{346}{302f}
+\createlinenumber{347}{421c}
+\createlinenumber{348}{115a}
+\createlinenumber{349}{0284}
+\createlinenumber{350}{4674}
+\createlinenumber{351}{f1a7}
+\createlinenumber{352}{bf79}
+\createlinenumber{353}{7a7d}
+\createlinenumber{354}{7322}
+\createlinenumber{355}{ee23}
+\createlinenumber{356}{2740}
+\createlinenumber{357}{330f}
+\createlinenumber{358}{6808}
+\createlinenumber{359}{95cf}
+\createlinenumber{360}{949a}
+\createlinenumber{361}{8893}
+\createlinenumber{362}{95cf}
+\createlinenumber{363}{8284}
+\createlinenumber{364}{0ef5}
+\createlinenumber{365}{89aa}
+\createlinenumber{366}{95cf}
+\createlinenumber{367}{d821}
+\createlinenumber{368}{8d05}
+\createlinenumber{369}{f7fc}
+\createlinenumber{370}{9a13}
+\createlinenumber{371}{95cf}
+\createlinenumber{372}{037f}
+\createlinenumber{373}{391b}
+\createlinenumber{374}{127e}
+\createlinenumber{375}{3623}
+\createlinenumber{376}{95cf}
+\createlinenumber{377}{95cf}
+\createlinenumber{378}{41b9}
+\createlinenumber{379}{caae}
+\createlinenumber{380}{e60c}
+\createlinenumber{381}{8029}
+\createlinenumber{382}{848d}
+\createlinenumber{383}{fa64}
+\createlinenumber{384}{95cf}
+\createlinenumber{385}{037f}
+\createlinenumber{386}{2299}
+\createlinenumber{387}{4a88}
+\createlinenumber{388}{fa64}
+\createlinenumber{389}{95cf}
+\createlinenumber{390}{95cf}
+\createlinenumber{391}{4cb9}
+\createlinenumber{392}{2b8d}
+\createlinenumber{393}{6564}
+\createlinenumber{394}{947d}
+\createlinenumber{395}{5597}
+\createlinenumber{396}{95cf}
+\createlinenumber{397}{afff}
+\createlinenumber{398}{2b8d}
+\createlinenumber{399}{4008}
+\createlinenumber{400}{b921}
+\createlinenumber{401}{774d}
+\createlinenumber{402}{6df0}
+\createlinenumber{403}{95cf}
+\createlinenumber{404}{5e8d}
+\createlinenumber{405}{0f8b}
+\createlinenumber{406}{b88e}
+\createlinenumber{407}{5945}
+\createlinenumber{408}{29be}
+\createlinenumber{409}{244d}
+\createlinenumber{410}{95cf}
+\createlinenumber{411}{6b4c}
+\createlinenumber{412}{f9c3}
+\createlinenumber{413}{7ce6}
+\createlinenumber{414}{3ee0}
+\createlinenumber{415}{6173}
+\createlinenumber{416}{0390}
+\createlinenumber{417}{e8da}
+\createlinenumber{418}{037f}
+\createlinenumber{419}{f635}
+\createlinenumber{420}{59d3}
+\createlinenumber{421}{95cf}
+\createlinenumber{422}{95cf}
+\createlinenumber{423}{e099}
+\createlinenumber{424}{95cf}
+\createlinenumber{425}{769b}
+\createlinenumber{426}{2452}
+\createlinenumber{427}{b88e}
+\createlinenumber{428}{b9ba}
+\createlinenumber{429}{271d}
+\createlinenumber{430}{18fe}
+\createlinenumber{431}{29be}
+\createlinenumber{432}{244d}
+\createlinenumber{433}{95cf}
+\createlinenumber{434}{22b3}
+\createlinenumber{435}{3627}
+\createlinenumber{436}{6564}
+\createlinenumber{437}{0d6c}
+\createlinenumber{438}{0b2c}
+\createlinenumber{439}{29be}
+\createlinenumber{440}{244d}
+\createlinenumber{441}{95cf}
+\createlinenumber{442}{9627}
+\createlinenumber{443}{b9aa}
+\createlinenumber{444}{6dbf}
+\createlinenumber{445}{099d}
+\createlinenumber{446}{dc05}
+\createlinenumber{447}{9a25}
+\createlinenumber{448}{797d}
+\createlinenumber{449}{1bb2}
+\createlinenumber{450}{5fc8}
+\createlinenumber{451}{ac30}
+\createlinenumber{452}{97df}
+\createlinenumber{453}{95cf}
+\createlinenumber{454}{95cf}
+\createlinenumber{455}{3117}
+\createlinenumber{456}{7618}
+\createlinenumber{457}{498a}
+\createlinenumber{458}{ccd1}
+\createlinenumber{459}{7021}
+\createlinenumber{460}{95cf}
+\begin{lstlisting}[language=C++]
+// code by Sansi
+// luogu p3835
+#include <bits/stdc++.h>
+using namespace std;
+const int N = 5e5 + 10;
+int rt[N], cnt;
+std::mt19937 rnd(233);
+struct node{
+	int l, r, val, key, size;
+}tr[N * 50];
+int new_node(int val){
+	tr[++cnt].val = val;
+	tr[cnt].key = rnd();
+	tr[cnt].size = 1;
+	return cnt;
+}
+void pushup(int u){
+	tr[u].size = tr[tr[u].l].size + tr[tr[u].r].size + 1;
+}
+void split(int u, int val, int& x, int& y){
+	if(!u){
+		x = y = 0; return;
+	}
+	if(tr[u].val <= val){
+		x = ++ cnt; tr[x] = tr[u];
+		split(tr[x].r, val, tr[x].r, y);
+		pushup(x);
+	}
+	else{
+		y = ++ cnt; tr[y] = tr[u];
+		split(tr[y].l, val, x, tr[y].l);
+		pushup(y);
+	}
+}
+int merge(int x, int y){
+	if(!x || !y) return x + y;
+	if(tr[x].key > tr[y].key){
+		int p = ++ cnt; tr[p] = tr[x];
+		tr[p].r = merge(tr[p].r, y);
+		pushup(p); return p;
+	}
+	else{
+		int p = ++ cnt; tr[p] = tr[y];
+		tr[p].l = merge(x, tr[p].l);
+		pushup(p); return p;
+	}
+}
+void insert(int& root, int val){
+	int x, y, z;
+	split(root, val, x, y);
+	z = new_node(val);
+	root = merge(merge(x, z), y);
+}
+void Delete(int& root, int val){
+	int x, y, z;
+	split(root, val, x, z);
+	split(x, val - 1, x, y);
+	y = merge(tr[y].l, tr[y].r);
+	root = merge(merge(x, y), z);
+}
+int Rank(int& root, int val){
+	int x, y;
+	split(root, val - 1, x, y);
+	int res = tr[x].size + 1;
+	root = merge(x, y);
+	return res;
+}
+int K_th(int& root, int k){
+	int u = root;
+	while(u){
+		if(tr[tr[u].l].size + 1 == k)
+			break;
+		else if(tr[tr[u].l].size >= k)
+			u = tr[u].l;
+		else{
+			k -= tr[tr[u].l].size + 1;
+			u = tr[u].r;
+		}
+	}
+	return tr[u].val;
+}
+int pre(int& root, int val){
+	int x, y, k, res;
+	split(root, val - 1, x, y);
+	if(!x) return -2147483647;
+	k = tr[x].size;
+	res = K_th(x, k);
+	root = merge(x, y);
+	return res;
+}
+int nex(int& root, int val){
+	int x, y, res;
+	split(root, val, x, y);
+	if(!y) return 2147483647;
+	else res = K_th(y, 1);
+	root = merge(x, y);
+	return res;
+}
+void solve(){
+	int n; cin >> n;
+    for(int i = 1; i <= n; i ++){
+        int t, op, x; cin >> t >> op >> x;
+      	rt[i] = rt[t];
+        if(op == 1) insert(rt[i], x);
+        if(op == 2) Delete(rt[i], x);
+        if(op == 3) cout << Rank(rt[t], x) << '\n';
+        if(op == 4) cout << K_th(rt[t], x) << '\n';
+        if(op == 5) cout << pre(rt[t], x) << '\n';
+        if(op == 6) cout << nex(rt[t], x) << '\n';
+    }
+}
+int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr); 
+    solve();
+    return 0;
+}
+\end{lstlisting}
+\section{Others}
+\subsection{Debugger}
+\createlinenumber{461}{e71a}
+\createlinenumber{462}{d966}
+\createlinenumber{463}{b7ec}
+\createlinenumber{464}{d71e}
+\createlinenumber{465}{e2f6}
+\createlinenumber{466}{d057}
+\createlinenumber{467}{b7ec}
+\createlinenumber{468}{9e23}
+\createlinenumber{469}{a881}
+\createlinenumber{470}{5efd}
+\createlinenumber{471}{3768}
+\createlinenumber{472}{c731}
+\createlinenumber{473}{95cf}
+\createlinenumber{474}{b7ec}
+\createlinenumber{475}{7dcc}
+\createlinenumber{476}{a881}
+\createlinenumber{477}{5efd}
+\createlinenumber{478}{0be6}
+\createlinenumber{479}{c8e5}
+\createlinenumber{480}{95cf}
+\createlinenumber{481}{18ba}
+\createlinenumber{482}{b1c0}
+\createlinenumber{483}{a881}
+\createlinenumber{484}{5efd}
+\createlinenumber{485}{8150}
+\createlinenumber{486}{c8e5}
+\createlinenumber{487}{95cf}
+\createlinenumber{488}{b7ec}
+\createlinenumber{489}{e9e6}
+\createlinenumber{490}{514d}
+\createlinenumber{491}{95cf}
+\createlinenumber{492}{9dda}
+\createlinenumber{493}{fa46}
+\createlinenumber{494}{064b}
+\createlinenumber{495}{c2b2}
+\createlinenumber{496}{5312}
+\createlinenumber{497}{95cf}
+\createlinenumber{498}{427e}
+\createlinenumber{499}{65f4}
+\createlinenumber{500}{8de5}
+\createlinenumber{501}{c542}
+\createlinenumber{502}{a8cb}
+\createlinenumber{503}{459a}
+\createlinenumber{504}{1937}
+\createlinenumber{505}{95cf}
+\createlinenumber{506}{7f4f}
+\begin{lstlisting}[language=C++]
+namespace debugger {
+#ifdef DEBUG
+    template <typename T>
+    void __print_var(string_view name, const T & x) { std::cerr << name << " = " << x; }
+    void __print_var(string_view name, const string & x) { std::cerr << name << " = \"" << x << "\""; }
+    void __print_var(string_view name, const char & x) { std::cerr << name << " = \'" << x << "\'"; }
+    template <typename T>
+    void __print_var(string_view name, const vector<T>& x) {
+        std::cerr << name << " = ";
+        bool is_first = true;
+        for (auto & ele : x) std::cerr << (is_first ? (is_first = false, "[") : ", ") << ele;
+        std::cerr << "]";
+    }
+    template <typename T>
+    void __print_var(string_view name, const set<T>& x) {
+        std::cerr << name << " = ";
+        bool is_first = true;
+        for (auto & ele : x) std::cerr << (is_first ? (is_first = false, "{") : ", ") << ele;
+        std::cerr << "}";
+    }
+    template <typename K, typename V>
+    void __print_var(string_view name, const map<K, V>& x) {
+        std::cerr << name << " = ";
+        bool is_first = true;
+        for (auto & [k, v] : x) std::cerr << (is_first ? (is_first = false, "{") : ", ") << "(" << k << ": " << v << ")";
+        std::cerr << "}";
+    }
+    template <typename T>
+    void __log(string_view name, const T & x) {
+        __print_var(name, x); std::cerr << '\n';
+    }
+    template <typename T, typename... Ts>
+    void __log(string_view name, const T & x, const Ts&... others) {
+        size_t pos = name.find(',');
+        __print_var(name.substr(0, pos), x); std::cerr << ", ";
+        __log(name.substr(pos + 1), others...);
+    }
+ 
+#define LOG(args...)\
+    { std::cerr << "line " << __LINE__ << ": " << __func__ << "(): ";\
+    __log(#args, ##args); }
+#else
+#define LOG(...) //log(a, b, c, ..., xxx);
+#endif
+}
+using namespace debugger;
+\end{lstlisting}
+\subsection{Fast IO}
+\createlinenumber{507}{427e}
+\createlinenumber{508}{4324}
+\createlinenumber{509}{c5a1}
+\createlinenumber{510}{d422}
+\createlinenumber{511}{427e}
+\createlinenumber{512}{34a1}
+\createlinenumber{513}{bdf6}
+\createlinenumber{514}{c9cd}
+\createlinenumber{515}{ae81}
+\createlinenumber{516}{95cf}
+\createlinenumber{517}{02cc}
+\createlinenumber{518}{95cf}
+\createlinenumber{519}{427e}
+\createlinenumber{520}{05b1}
+\createlinenumber{521}{2544}
+\createlinenumber{522}{edf0}
+\createlinenumber{523}{7a2d}
+\createlinenumber{524}{95cc}
+\createlinenumber{525}{f21e}
+\createlinenumber{526}{827a}
+\createlinenumber{527}{95cf}
+\createlinenumber{528}{427e}
+\createlinenumber{529}{e794}
+\createlinenumber{530}{44c3}
+\createlinenumber{531}{b830}
+\createlinenumber{532}{95cf}
+\createlinenumber{533}{427e}
+\createlinenumber{534}{5037}
+\createlinenumber{535}{95cf}
+\createlinenumber{536}{b96b}
+\createlinenumber{537}{427e}
+\begin{lstlisting}[language=C++]
+// #define int __int128
+namespace io {
+  constexpr int BUFFER_SIZE = 1 << 16;
+  char buffer[BUFFER_SIZE], *head, *tail;
+
+  char get_char() {
+    if (head == tail) {
+      int l = (int) fread(buffer, 1, BUFFER_SIZE, stdin);
+      tail = (head = buffer) + l;
+    }
+    return *head++;
+  }
+
+  int read() {
+    int x = 0, f = 1;
+    char c = get_char();
+    for (; !isdigit(c); c = get_char())
+      if (c == '-') f = -1;
+    for (; isdigit(c); c = get_char()) x = x * 10 + c - '0';
+    return x * f;
+  }
+
+  void print(int x) {
+    if (x > 9) print(x / 10);
+    putchar(x % 10 | '0');
+  }
+
+  void println(int x) { print(x), putchar('\n'); }
+}  // namespace io
+using namespace io;
+
+\end{lstlisting}

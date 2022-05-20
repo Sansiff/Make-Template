@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {1}String}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}String Hash}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Manacher}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Math}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Linear Sieve}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}组合数预处理}{5}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Data Structure}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Fenwick}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}K-Dtree}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}可持久化平衡树}{7}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Others}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Debugger}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Fast IO}{9}{subsection.4.2}%
